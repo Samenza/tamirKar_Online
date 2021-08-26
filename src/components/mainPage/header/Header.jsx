@@ -1,12 +1,12 @@
 import React from "react";
-import NavBar from "./navBar/NavBar";
+
 import "./header.scss";
+import QuickRequest from "./quickRequest/QuickRequest";
 const Header = () => {
   return (
     <React.Fragment>
-      <NavBar />
       <header>
-        <div className="quickRequest"></div>
+        <QuickRequest />
       </header>
       <hr />
     </React.Fragment>
