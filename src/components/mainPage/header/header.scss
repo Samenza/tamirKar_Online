@@ -1,0 +1,28 @@
+@import "/src/sassStyles/variables";
+
+header {
+  background: {
+    image: url("../../../assets/images/headerBg.png");
+    repeat: no-repeat;
+    size: cover;
+    position: top right;
+  }
+
+  width: 100%;
+  height: 60vh;
+
+  .quickRequest {
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    background-color: $secondaryColorDark;
+    transform: translateY(50vh);
+    border-radius: 8px;
+  }
+}
+hr {
+  margin: 0;
+  height: 3px;
+  background-color: $primaryColorDark;
+  border: none;
+}
