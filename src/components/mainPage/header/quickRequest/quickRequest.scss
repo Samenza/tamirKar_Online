@@ -15,7 +15,7 @@
     border-radius: 4px;
     border: none;
     margin-top: 1rem;
-    background-color: $primaryColorDark;
+    background-color: $primaryColorLight;
     color: $primarytextColor;
     font-size: 1rem;
   }
@@ -33,26 +33,40 @@
 .inputs {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   flex-direction: row-reverse;
   width: 90%;
+  margin-bottom: 1rem;
 }
+
 .input {
-  width: 14vw;
-  height: 2rem;
-  text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  height: 2.3rem;
   border: none;
   border-radius: 4px;
   background-color: $primaryBackgroundColor;
 }
+.inputType {
+  width: 14vw;
+  text-align: center;
+}
+.selectType {
+  width: 12vw;
+  font-size: 1rem;
+  direction: rtl;
+  option {
+    font-size: 1.1rem;
+    background-color: $primaryBackgroundColor;
+  }
+}
 .inputWrapper {
-  margin: 2vh 1vw;
+  margin: 1vh 1vw 0;
 }
 .adressInputs {
   flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
   .input {
-    width: 60vw;
+    width: 55vw;
   }
 }

@@ -9,6 +9,7 @@ const Header = () => {
         <QuickRequest />
       </header>
       <hr />
+      <div className="emptySpace" />
     </React.Fragment>
   );
 };

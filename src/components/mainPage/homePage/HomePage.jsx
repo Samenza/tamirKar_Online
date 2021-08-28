@@ -1,7 +1,7 @@
 import "./homePage.scss";
 
 const HomePage = () => {
-  return <section className="contentBackground"></section>;
+  return <div className="content"></div>;
 };
 
 export default HomePage;
