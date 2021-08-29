@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./quickRequest.scss";
 
 const QuickRequest = () => {
@@ -97,9 +97,9 @@ const QuickRequest = () => {
       },
     ],
   };
+  const inputRef = useRef(inputs.type[0].options[0].brands);
   useEffect(() => {
-    let data = inputs.type[0].options[0].brands;
-    setBrandInput(data);
+    setBrandInput(inputRef.current);
   }, []);
   const selectOnChange = (e, input) => {
     setBrandInput(input.options.find((d) => d.type === e.target.value).brands);
@@ -107,7 +107,7 @@ const QuickRequest = () => {
   return (
     <React.Fragment>
       <div className="quickRequest">
-        <h4>درخواست تعمیرکار</h4>
+        <h3>درخواست تعمیرکار</h3>
         <div className=" inputs">
           {brandInput &&
             inputs.type.map((input) => {

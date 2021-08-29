@@ -1,0 +1,7 @@
+@import "./variables";
+
+@mixin customMinHeightBreakPoint($size) {
+  @media (max-height: $size +"px") {
+    @content;
+  }
+}

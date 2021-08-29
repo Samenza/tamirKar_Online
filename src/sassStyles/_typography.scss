@@ -1,1 +1,29 @@
+@import "./variables";
+@font-face {
+  font-family: "B-NAZANIN";
+  src: local("B nazanin") local("B NAZANIN") local("B-nazanin")
+    local("B-NAZANIN") url("../fonts/B-NAZANIN.TTF") format(truetype);
+}
+@font-face {
+  font-family: "iranian Sans";
+  src: local("iranian Sans") local("IRANIAN SANS") local("iranian-Sans")
+    local("IRANIAN-SANS") url("../fonts/Iranian\ Sans.ttf") format(truetype);
+}
+@font-face {
+  font-family: "trado";
+  src: local("trado") local("TRADO") url("../fonts/TRADBDO.TTF")
+    format(truetype);
+}
 
+h3 {
+  font-size: 1.5em;
+  color: $primarytextColor;
+  font-family: "trado";
+  margin: 0;
+}
+h5 {
+  font-size: 1em;
+  color: $primarytextColor;
+  font-family: "iranian Sans";
+  margin: 0;
+}

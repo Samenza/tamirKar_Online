@@ -1,4 +1,6 @@
 @import "/src/sassStyles/variables";
+@import "/src/sassStyles/mixins";
+
 .quickRequest {
   display: flex;
   flex-direction: column;
@@ -19,8 +21,8 @@
     color: $primarytextColor;
     font-size: 1rem;
   }
-  h4 {
-    margin: 1rem 0 1rem 0;
+  h3 {
+    margin: 1rem 0 0.5rem 0;
     padding-bottom: 5px;
     border-bottom: 3px solid $primaryColorLight;
   }
@@ -68,5 +70,16 @@
   flex-wrap: wrap;
   .input {
     width: 55vw;
+  }
+}
+
+@include customMinHeightBreakPoint(430) {
+  .quickRequest {
+    transform: translateY(60vh);
+  }
+}
+@include customMinHeightBreakPoint(200) {
+  .quickRequest {
+    transform: translateY(90vh);
   }
 }
