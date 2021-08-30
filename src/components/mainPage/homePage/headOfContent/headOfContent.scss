@@ -1,0 +1,88 @@
+@import "/src/sassStyles/variables";
+@import "/src/sassStyles/animations";
+.headOfContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  min-height: 35vh;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 2px 7px $secondaryColorLight;
+
+  .iconWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 70%;
+  }
+  .imgWrapperHide {
+    display: none;
+  }
+  .imgWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 1rem;
+
+    &:hover {
+      .icon {
+        width: 45%;
+      }
+    }
+  }
+  .icon {
+    width: 38%;
+  }
+
+  h5 {
+    margin-top: 1rem;
+  }
+  h4 {
+    border-bottom: 2px solid $primaryColorDark;
+    margin: 0 0 1rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animationIcon {
+    animation: {
+      name: icons-animation;
+      duration: 1s;
+      iteration-count: 1;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .notes,
+  .calendar,
+  .receipt,
+  .toolBox,
+  .gurantee {
+    animation: {
+      name: icons-animation;
+      duration: 0.5s;
+      iteration-count: 1;
+    }
+    width: 10%;
+    margin-bottom: 1rem;
+  }
+  .notes {
+    animation-delay: 0.5s;
+  }
+  .calendar {
+    animation-delay: 0.7s;
+  }
+  .receipt {
+    animation-delay: 0.9s;
+  }
+  .toolBox {
+    animation-delay: 1.1s;
+  }
+  .gurantee {
+    animation-delay: 1.3s;
+  }
+}
