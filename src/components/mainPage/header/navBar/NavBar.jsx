@@ -5,10 +5,10 @@ const NavBar = () => {
     <div className="navBar">
       <img src="/images/Logo.png" alt="weatherLogo" />
       <nav>
-        <h3> صفحه اصلی</h3>
-        <h3>تعمیر سایر وسایل </h3>
-        <h3>تماس با ما</h3>
-        <h3>درباره ما</h3>
+        <h4> صفحه اصلی</h4>
+        <h4>تعمیر سایر وسایل </h4>
+        <h4>تماس با ما</h4>
+        <h4>درباره ما</h4>
       </nav>
     </div>
   );

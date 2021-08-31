@@ -16,19 +16,29 @@
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: $primarytextColor;
   font-family: "trado";
   margin: 0;
+  direction: rtl;
 }
 h4 {
+  font-size: 1.5em;
+  color: $primarytextColor;
+  font-family: "trado";
+}
+h5 {
   font-size: 1.3em;
   color: $primarytextColor;
   font-family: "iranian Sans";
-}
-h5 {
-  font-size: 1.1em;
-  color: $primarytextColor;
-  font-family: "iranian Sans";
   margin: 0;
+}
+
+.p-main {
+  font-size: 1.3em;
+  font-family: "b nazanin";
+  line-height: 2rem;
+  margin: 1rem 0;
+  color: $secondarytextColor;
+  direction: rtl;
 }

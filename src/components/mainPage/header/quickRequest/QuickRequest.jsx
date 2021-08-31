@@ -107,7 +107,7 @@ const QuickRequest = () => {
   return (
     <React.Fragment>
       <div className="quickRequest">
-        <h3>درخواست تعمیرکار</h3>
+        <h4>درخواست تعمیرکار</h4>
         <div className=" inputs">
           {brandInput &&
             inputs.type.map((input) => {
