@@ -37,7 +37,7 @@ const HeadOfContent = () => {
   const iconRef = useRef();
   const optionRef = useRef({
     root: null,
-    rootMargin: "0px",
+    rootMargin: "0px 0px -200px 0px",
     threshold: 1,
   });
   const callBackFucntion = (entries) => {
@@ -76,7 +76,7 @@ const HeadOfContent = () => {
           <div key={icon.alt} className="imgWrapperHide">
             <img src={icon.number} alt="number" className={icon.alt} />
             <img src={icon.src} alt={icon.alt} className="icon" />
-            <h5>{icon.discription}</h5>
+            <h6>{icon.discription}</h6>
           </div>
         ))}
       </div>

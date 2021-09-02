@@ -1,4 +1,39 @@
-section {
-  width: 80%;
-  margin: 2rem 0;
+.midContent {
+  display: flex;
+  width: 83%;
+  margin: 5rem 0;
+
+  .gearIcon {
+    width: 12rem;
+    margin-right: 3rem;
+  }
+  .gearIconAnimation {
+    animation: {
+      name: rotateAnimation;
+      duration: 2s;
+      iteration-count: 1;
+    }
+  }
+  .paragraph {
+    display: flex;
+    align-items: center;
+  }
+  .firstParagraph {
+    width: 98%;
+    justify-content: flex-end;
+  }
+  .secondParagraf {
+    margin-top: 5rem;
+    .payIcon {
+      margin-left: 5rem;
+      width: 12rem;
+    }
+  }
+  .payAnimationIcon {
+    animation: {
+      name: translateXAnimation;
+      duration: 2s;
+      iteration-count: 1;
+    }
+  }
 }

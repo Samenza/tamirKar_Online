@@ -106,7 +106,7 @@ const QuickRequest = () => {
   };
   return (
     <React.Fragment>
-      <div className="quickRequest">
+      <div id="request" className="quickRequest">
         <h4>درخواست تعمیرکار</h4>
         <div className=" inputs">
           {brandInput &&
