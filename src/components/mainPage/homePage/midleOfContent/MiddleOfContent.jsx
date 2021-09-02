@@ -10,9 +10,8 @@ const MiddleOfContent = () => {
     threshold: 1,
   });
   const callBackFucntion = (entries) => {
-    entries.map((entry) => {
+    for (let entry of entries) {
       if (entry.isIntersecting) {
-        console.log(entry);
         if (entry.target.className === "gearIcon") {
           iconRef.current.classList.add("gearIconAnimation");
         }
@@ -20,7 +19,7 @@ const MiddleOfContent = () => {
           secondIconRef.current.classList.add("payAnimationIcon");
         }
       }
-    });
+    }
   };
 
   useEffect(() => {
